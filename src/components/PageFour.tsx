@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import flyingImg from "../assets/PageFour/flying.svg";
+import flyingImg from "../assets/pageFour/flying.svg";
 
 const PageFourContainer = styled.div`
   margin-top: 150px;
