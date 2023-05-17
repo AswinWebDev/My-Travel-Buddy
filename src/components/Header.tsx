@@ -14,6 +14,9 @@ const HeaderContainer = styled.div`
 `;
 const HeaderContainerImage = styled.img`
   max-width: 100%;
+  @media (max-width: 1200px) {
+    display: none;
+  }
 `;
 const HeaderContents = styled.div`
     position: absolute;
@@ -22,9 +25,12 @@ const HeaderContents = styled.div`
     gap: 2rem;
     top: 25%;
     left: 3%;
+    
     @media (max-width: 1200px) {
       gap: 1rem;
       top: 20%;
+      position: static;
+      align-items: center;
     }
     @media (max-width: 768px) {
       gap: 0.9rem;
@@ -43,13 +49,13 @@ const HeaderTitle = styled.div`
   color: #0f222b;
   text-align: left;
   @media (max-width: 1200px) {
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 35px;
+    line-height: 50px;
     top: 20%;
+    text-align: center;
+    margin-top: 20px;
   }
   @media (max-width: 768px) {
-    font-size: 10px;
-    line-height: 15px;
     top: 30%;
   }
 `;
@@ -65,16 +71,14 @@ const HeaderTitleSub = styled.div`
   text-align: left;
 
   @media (max-width: 1200px) {
-    max-width: 300px;
-    font-size: 14px;
-    line-height: 15px;
+    max-width: 500px;
     top: 40%;
+    text-align: center;
   }
   @media (max-width: 768px) {
-    font-size: 8px;
-    line-height: 10px;
     top: 55%;
-    max-width: 200px;
+    max-width: 300px;
+    margin-top: 20px;
   }
 `;
 // header box //
@@ -86,6 +90,7 @@ const HeaderBox = styled.div`
   border-radius: 10px;
   @media (max-width: 1200px) {
     gap: 10px;
+    margin-top: 20px;
   }
   @media (max-width: 768px) {
   }
@@ -95,7 +100,11 @@ const HeaderBoxChild1Container = styled.div`
   align-items: center;
   gap: 4.63px;
 `;
-const GlobeBlack = styled.img``;
+const GlobeBlack = styled.img`
+  @media (max-width: 1200px) {
+    width: 20px;
+  }
+`;
 const DhakaAndDate = styled.div`
   font-family: "Poppins";
   font-style: normal;
@@ -108,7 +117,7 @@ const DhakaAndDate = styled.div`
 
   color: #0f222b;
   @media (max-width: 1200px) {
-    font-size: 8px;
+    font-size: 12px;
   }
 `;
 const DownArrow = styled.img``;
@@ -119,7 +128,11 @@ const HeaderBoxChild2Container = styled.div`
   align-items: center;
   gap: 4.63px;
 `;
-const Calender = styled.img``;
+const Calender = styled.img`
+  @media (max-width: 1200px) {
+    width: 20px;
+  }
+`;
 // Get Started Button //
 const GetStartedButton = styled.div`
   background: #fdbc0c;
@@ -141,7 +154,6 @@ const GetStartedButtonText = styled.div`
 
   color: #0f222b;
   @media (max-width: 1200px) {
-    font-size: 10px;
   }
 `;
 const Header = () => {

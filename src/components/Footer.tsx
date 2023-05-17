@@ -13,8 +13,10 @@ const FooterContainer = styled.div`
   gap: 60px;
 
   @media (max-width: 1200px) {
-    flex-direction: column;
-    gap: 40px;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    gap: 80px;
   }
 `;
 //   child 1 //
@@ -27,6 +29,8 @@ const FooterChild1 = styled.div`
 `;
 const FooterChild1Logo = styled.img`
   max-width: 98px;
+  @media (max-width: 1200px) {
+    margin: 0 auto;
 `;
 const FooterChild1Text = styled.div`
   font-family: "Manrope";
@@ -46,6 +50,9 @@ const SocialLogoConatiner = styled.div`
   display: flex;
   gap: 16px;
   align-items: center;
+  @media (max-width: 1200px) {
+    justify-content: center;
+  }
 `;
 const LinkidinLogo = styled.img``;
 const TwitterLogo = styled.img``;
@@ -99,6 +106,10 @@ const FooterChild4 = styled.div`
   flex-direction: column;
   justify-content: space-between;
   gap: 26px;
+  @media (max-width: 1200px) {
+    justify-content: center;
+    align-items: center;
+  }
 `;
 // email and subscribe input //
 const SubscribeContainer = styled.div`
